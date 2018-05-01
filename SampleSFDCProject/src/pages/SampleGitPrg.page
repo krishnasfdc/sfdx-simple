@@ -1,0 +1,13 @@
+<apex:page controller="SampleGitCTRL">
+    <apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockSection >
+            	<apex:pageBlockTable value="{!arecs}" var="a">
+                	<apex:column value="{!a.Name}"/>
+                    <apex:column value="{!a.Phone}"/>
+                    <apex:column value="{!a.BillingCity}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,16 @@
+<apex:page controller="SamplePagefCTRL">
+    <apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockSection >
+            	<apex:pageBlockTable value="{!arecs}" var="a">
+                	<apex:column value="{!a.Name}"/>
+                    <apex:column value="{!a.Phone}"/>
+                    <apex:column value="{!a.Rating}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+            	<apex:commandButton value="Get Records" action="{!getRecords}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
