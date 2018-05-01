@@ -6,4 +6,9 @@ public class SampleGitCTRL {
         
         arecs = [SELECT Id, Name, Phone, BillingCity FROM Account];
     }
+    
+    public void gitMethod(){
+    	
+    	system.debug("This method is used to test the GIT HUB");
+    }
 }
